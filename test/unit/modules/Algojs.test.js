@@ -8,7 +8,7 @@ import {
     getFirstValue,
     minMax,
     sortByLength,
-    // filterArray,
+    filterArray,
     // animals,
     // lastItem,
     // reverseArray,
@@ -145,17 +145,17 @@ test("---------sortByLength---------", t => {
 });
 
 // // -------------------------------------------------- Filter Strings from Array --------------------------------------
-// test("---------filterArray---------", t => {
+test("---------filterArray---------", t => {
 
-//     t.test("filterArray", assert => {
-//         const message = "returns an array of integers only.";
-//         const expected = [1, 2, 3, 4];
-//         const actual = filterArray();
+    t.test("filterArray", assert => {
+        const message = "returns an array of integers only.";
+        const expected = [1, 2, 3, 4];
+        const actual = filterArray();
 
-//         assert.deepEqual(actual, expected, message);
-//         assert.end();
-//     });
-// });
+        assert.deepEqual(actual, expected, message);
+        assert.end();
+    });
+});
 
 // // -----------------------------------------------The Farm Problem -----------------------------------------
 // test("---------The Farm Problem---------", t => {

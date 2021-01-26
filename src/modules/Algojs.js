@@ -68,7 +68,18 @@ export function sortByLength(tab){
 }
 
 // --------------------------------------------------- Filter Strings from Array -------------------------------------
+export function filterArray(){
+    var tab = [1, 2, 3, "a", "b", 4];
+    var res = [];
 
+    for (var i = 0; i < tab.length; i++){
+        var test = parseInt(tab[i]);
+        if (!Number.isNaN(test)){
+            res.push(tab[i]);
+        }
+    }
+    return res;
+}
 // --------------------------------------------------- Return Last Item -------------------------------------
 
 
