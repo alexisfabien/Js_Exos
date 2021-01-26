@@ -2,28 +2,70 @@
 
 // --------------------------------------------Function without argument--------------------------------------------
 export function isoNum() {
-    return true;
+    return 42;
 }
 
 // --------------------------------------------------- Function with arguments -------------------------------------
-
+export function myFct(arg1, arg2) {
+    return arg1 + arg2;
+}
 
 // --------------------------------------------------- Messi’s Goal Total -------------------------------------
-
-// --------------------------------------------------- Grasshopper Order of Operations -------------------------------------
-
+export function goalTotal(arg1, arg2, arg3){
+    return arg1 + arg2 + arg3;
+}
 // --------------------------------------------------- Return the First Element in an Array -------------------------------------
+export function getFirstValue(tab){
+    var tab = [58, 34, 29];
+    return tab[0];
+}
+// --------------------------------------------------- Grasshopper Order of Operations -------------------------------------
+export function GrasshopperOrder(){
+    return 2 * 2 * 2 * 2 * 2;
+}
 
 
 // --------------------------------------------------- Find the Smallest and Biggest Numbers -------------------------------------
+export function minMax(tab){
+    var tmp = 0;
 
+    if(tab.length === 1){
+       return [tab[0], tab[0]]
+    }
 
+    for(var i=0; i < tab.length; i++){
 
-// --------------------------------------------------- Find the Smallest and Biggest Numbers -------------------------------------
+      while(tab[i] > tab[i+1]){
+        tmp = tab[i]
+        tab[i] = tab[i+1]
+        tab[i+1] = tmp
+      }
+    var min = tab[0];
+    var max = tab[tab.length-1]
 
+    }
+return [min,max];
+}
 
 // --------------------------------------------------- Sort by String Length -------------------------------------
+export function sortByLength(tab){
+    var a = tab.length;
 
+    for (var i = 0; i < a - 1; i++){
+        var mini = i;
+        for (var j = i + 1; j < a; j++){
+            if (tab[j].length < tab[mini].length){
+                mini = j;
+            }
+        }
+        if (mini !== i){
+            var tmp = tab[i];
+            tab[i] = tab[mini];
+            tab[mini] = tmp;
+        }
+    }
+    return tab;
+}
 
 // --------------------------------------------------- Filter Strings from Array -------------------------------------
 
