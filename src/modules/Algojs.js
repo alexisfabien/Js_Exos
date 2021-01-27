@@ -96,7 +96,17 @@ export function filterArray(){
 
 
 // --------------------------------------------------- Filter out Strings from an Array -------------------------------------
+export function filterArrayInt(tab){
+    var res = [];
 
+    for (var i = 0; i < tab.length; i++){
+        var test = (tab[i]);
+        if (typeof test === 'number'){
+            res.push(tab[i]);
+        }
+    }
+    return res;
+}
 // --------------------------------------------------- Array of Multiples -------------------------------------
 
 

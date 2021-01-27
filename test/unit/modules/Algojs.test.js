@@ -9,12 +9,12 @@ import {
     minMax,
     sortByLength,
     filterArray,
-    // animals,
     // lastItem,
+    // animals,
     // reverseArray,
     // addition,
     // boolToString,
-    // filterArrayInt,
+    filterArrayInt,
     // arrayOfMultiples,
     // convert,
     // returnNegative,
@@ -157,8 +157,8 @@ test("---------filterArray---------", t => {
     });
 });
 
-// // -----------------------------------------------The Farm Problem -----------------------------------------
-// test("---------The Farm Problem---------", t => {
+// // -----------------------------------------------Return Last Item -----------------------------------------
+// test("---------Return Last Item---------", t => {
 
 //     t.test("lastItem", assert => {
 //         const message = "returns the total number of legs of all the animals.";
@@ -228,32 +228,32 @@ test("---------filterArray---------", t => {
 // });
 
 // // ----------------------------------------------- Filter out Strings from an Array -----------------------------------------
-// test("---------filterArrayInt---------", t => {
-//     t.test("TEST 1 : filterArrayInt", assert => {
-//         const message = "converts an object into an array. YOU NEED TO RETURN [1, 2]";
-//         const expected = [1, 2];
-//         const actual = filterArrayInt([1, 2, "a", "b"]);
+test("---------filterArrayInt---------", t => {
+    t.test("TEST 1 : filterArrayInt", assert => {
+        const message = "converts an object into an array. YOU NEED TO RETURN [1, 2]";
+        const expected = [1, 2];
+        const actual = filterArrayInt([1, 2, "a", "b"]);
 
-//         assert.deepEqual(actual, expected, message);
-//         assert.end();
-//     });
-//     t.test("TEST 2 : filterArrayInt", assert => {
-//         const message = "converts an object into an array. YOU NEDD TO RETURN [1, 0, 15]";
-//         const expected = [1, 0, 15];
-//         const actual = filterArrayInt([1, "a", "b", 0, 15]);
+        assert.deepEqual(actual, expected, message);
+        assert.end();
+    });
+    t.test("TEST 2 : filterArrayInt", assert => {
+        const message = "converts an object into an array. YOU NEDD TO RETURN [1, 0, 15]";
+        const expected = [1, 0, 15];
+        const actual = filterArrayInt([1, "a", "b", 0, 15]);
 
-//         assert.deepEqual(actual, expected, message);
-//         assert.end();
-//     });
-//     t.test("TEST 3 : filterArrayInt", assert => {
-//         const message = "converts an object into an array. YOU NEED TO RETUEN [1, 2, 123]";
-//         const expected = [1, 2, 123];
-//         const actual = filterArrayInt([1, 2, "aasf", "1", "123", 123]);
+        assert.deepEqual(actual, expected, message);
+        assert.end();
+    });
+    t.test("TEST 3 : filterArrayInt", assert => {
+        const message = "converts an object into an array. YOU NEED TO RETUEN [1, 2, 123]";
+        const expected = [1, 2, 123];
+        const actual = filterArrayInt([1, 2, "aasf", "1", "123", 123]);
 
-//         assert.deepEqual(actual, expected, message);
-//         assert.end();
-//     });
-// });
+        assert.deepEqual(actual, expected, message);
+        assert.end();
+    });
+});
 
 // // --------------------------------------------- Array of Multiples -------------------------------------------
 // test("---------arrayOfMultiples---------", t => {
@@ -346,7 +346,7 @@ test("---------filterArray---------", t => {
 //         const expected = [1, 2, 3, 4, 5, 6];
 //         const actual = simpleLoop(6);
 
-//         assert.equal(actual, expected, message);
+//         assert.deepEqual(actual, expected, message);
 //         assert.end();
 //     });
 // });
