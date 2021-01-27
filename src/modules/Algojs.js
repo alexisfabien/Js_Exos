@@ -81,13 +81,35 @@ export function filterArray(){
     return res;
 }
 // --------------------------------------------------- Return Last Item -------------------------------------
-
+export function lastItem(tab){
+    var last = tab[tab.length - 1];
+    return last;
+}
 
 
 // --------------------------------------------------- The Farm Problem -------------------------------------
-
+export function animals(){
+    var biPattes = 2;
+    var quadriPattes = 4;
+    var poule = biPattes * 2;
+    var vache = quadriPattes * 3;
+    var cochons = quadriPattes * 5;
+    return poule + vache + cochons;
+}
 // --------------------------------------------------- Reverse an Array -------------------------------------
-
+export function reverseArray(){
+    var tmp = 0;
+    var tab = [1, 2, 3, 4];
+    for (var i = 0; i <= tab.length; i++){
+        while (tab[i] < tab[i+1]){
+            tmp = tab[i];
+            tab[i] = tab[i+1];
+            tab[i+1] = tmp;
+            i = 0;
+        }
+    }
+    return tab;
+}
 
 // --------------------------------------------------- Return the Next Number from the Integer Passed -------------------------------------
 

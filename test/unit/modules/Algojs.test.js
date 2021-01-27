@@ -9,10 +9,10 @@ import {
     minMax,
     sortByLength,
     filterArray,
-    // lastItem,
-    // animals,
-    // reverseArray,
-    // addition,
+    lastItem,
+    animals,
+    reverseArray,
+    addition,
     // boolToString,
     filterArrayInt,
     // arrayOfMultiples,
@@ -158,54 +158,54 @@ test("---------filterArray---------", t => {
 });
 
 // // -----------------------------------------------Return Last Item -----------------------------------------
-// test("---------Return Last Item---------", t => {
+test("---------Return Last Item---------", t => {
 
-//     t.test("lastItem", assert => {
-//         const message = "returns the total number of legs of all the animals.";
-//         const expected = 'g';
-//         const actual = lastItem('The quick brown fox jumped over the lazy dog');
+    t.test("lastItem", assert => {
+        const message = "returns the total number of legs of all the animals.";
+        const expected = 'g';
+        const actual = lastItem('The quick brown fox jumped over the lazy dog');
 
-//         assert.equal(actual, expected, message);
-//         assert.end();
-//     });
-// });
+        assert.equal(actual, expected, message);
+        assert.end();
+    });
+});
 
 // // -------------------------------------------------------- The Farm Problem --------------------------------
-// test("---------animals---------", t => {
+test("---------animals---------", t => {
 
-//     t.test("animals", assert => {
-//         const message = "returns the total number of legs of all the animals.";
-//         const expected = 36;
-//         const actual = animals();
+    t.test("animals", assert => {
+        const message = "returns the total number of legs of all the animals.";
+        const expected = 36;
+        const actual = animals();
 
-//         assert.equal(actual, expected, message);
-//         assert.end();
-//     });
-// });
+        assert.equal(actual, expected, message);
+        assert.end();
+    });
+});
 
-// // ----------------------------------------------- Reverse an Array -----------------------------------------
-// test("---------reverseArray---------", t => {
-//     t.test("reverseArray", assert => {
-//         const message = "reverse an array.";
-//         const expected = [4, 3, 2, 1];
-//         const actual = reverseArray();
+// ----------------------------------------------- Reverse an Array -----------------------------------------
+test("---------reverseArray---------", t => {
+    t.test("reverseArray", assert => {
+        const message = "reverse an array.";
+        const expected = [4, 3, 2, 1];
+        const actual = reverseArray();
 
-//         assert.deepEqual(actual, expected, message);
-//         assert.end();
-//     });
-// });
+        assert.deepEqual(actual, expected, message);
+        assert.end();
+    });
+});
 
 // // -------------------------------------------------- Return the Next Number from the Integer Passed --------------------------------------
-// test("---------addition---------", t => {
-//     t.test("addition", assert => {
-//         const message = "Increments the number by + 1 and returns the result.";
-//         const expected = 10;
-//         const actual = addition();
+test("---------addition---------", t => {
+    t.test("addition", assert => {
+        const message = "Increments the number by + 1 and returns the result.";
+        const expected = 10;
+        const actual = addition();
 
-//         assert.equal(actual, expected, message);
-//         assert.end();
-//     });
-// });
+        assert.equal(actual, expected, message);
+        assert.end();
+    });
+});
 
 // // --------------------------------------------------- Boolean to String Conversion -------------------------------------
 // test("--------boolToString---------", t => {
