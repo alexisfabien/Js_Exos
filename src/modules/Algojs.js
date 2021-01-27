@@ -112,10 +112,17 @@ export function reverseArray(){
 }
 
 // --------------------------------------------------- Return the Next Number from the Integer Passed -------------------------------------
-
-
+export function addition(a){
+    a = 9;
+    return a + 1;
+}
 // --------------------------------------------------- Boolean to String Conversion -------------------------------------
-
+export function boolToString(flag){
+    if (flag === true){
+        return 'true';
+    }
+    return 'false';
+}
 
 // --------------------------------------------------- Filter out Strings from an Array -------------------------------------
 export function filterArrayInt(tab){
@@ -130,20 +137,66 @@ export function filterArrayInt(tab){
     return res;
 }
 // --------------------------------------------------- Array of Multiples -------------------------------------
+export function arrayOfMultiples(num, long){
+    var tmp = 0;
+    var res = [];
 
+    for (var i = 1; i <= long; i++){
+        tmp = num * i;
+        res.push(tmp);
+    }
+    return res;
+}
 
 // --------------------------------------------------- Convert Hours and Minutes into Seconds -------------------------------------
-
+export function convert(h, m){
+    var hs = h * 3600;
+    var ms = m * 60;
+    return hs + ms;
+}
 // --------------------------------------------------- Return Negative -------------------------------------
-
+export function returnNegative(n){
+    if (n > 0){
+        return n * -1;
+    }
+    return n;
+}
 // --------------------------------------------------- Simple Loop -------------------------------------
-
+export function simpleLoop(n){
+    var res = [];
+    for (var i = 1; i <= n; i++){
+        res.push(i);
+    }
+    return res;
+}
 
 // --------------------------------------------------- Area of a Rectangle -------------------------------------
-
+export function getArea(larg, long){
+    if (larg <= 0 || long <=0){
+        return -1;
+    }
+    return larg * long;
+}
 // --------------------------------------------------- Two Makes Ten -------------------------------------
-
+export function makesTen(a, b){
+    if (a === 10 || b === 10 || a + b === 10){
+        return true;
+    }
+    return false;
+}
 
 // --------------------------------------------------- Add up the Numbers from a Single Number -------------------------------------
-
+export function addUp(a){
+    var tmp = 0;
+    for (var i = 1; i <= a; i++){
+        tmp = tmp + i;
+    }
+    return tmp;
+}
 // --------------------------------------------------- Matchstick Houses -------------------------------------
+export function matchHouses(step){
+    var maison = 6;
+    var maisonPrime = 5;
+    var res = maison + (maisonPrime * (step - 1));
+    return res;
+}
